@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="overlay">
+        <h2 id="exit" onclick="hide()">Back</h2>
+        <model-viewer src="https://www.mediafire.com/file/u7idps0rocv66hs/Stadium_ARI.glb" shadow-intensity="10" camera-controls
+            touch-action="pan-y"></model-viewer>
+    </div>
+    <div id="header">MLB Baseball Stadiums from Baseball Savant</div>
+    <div id="stadium-container">
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

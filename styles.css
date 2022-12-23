@@ -1,0 +1,111 @@
+body, html {
+    background-color: rgb(212, 128, 17);
+    margin: 0;
+}
+
+#header {
+    background-color: rgb(59, 55, 55);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6vh;
+    padding: 1.5vh;
+    color: aliceblue;
+    user-select: none;
+    border-bottom: rgb(110, 100, 100) solid 0.75vh;
+    transition: color 0.5s, border 0.5s, background-color 0.5s;
+    font-weight: 500;
+}
+
+#header:hover {
+    color: rgb(223, 161, 120);
+    border-bottom: rgb(124, 119, 119) solid 0.75vh;
+    cursor: pointer;
+    background-color: rgb(41, 39, 39);
+}
+
+#stadium-container {
+    margin-top: 10vh;
+    display: flex;
+    background-color: rgb(43, 26, 26);
+    height: fit-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.stadium-tile {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 20vw;
+    height: 25vh;
+    margin: 2vw;
+    background-image: url("img/Arizona.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    transition: scale 0.25s, box-shadow 0.25s;
+    border: 0.5vh solid black;
+}
+
+.stadium-tile:hover {
+    box-shadow: 0px 0px 3vh rgb(80, 80, 78);
+    scale: 1.15;
+    cursor: pointer;
+}
+
+.stadium-label {
+    position: absolute;
+    background-color: rgba(20, 20, 20, 0.781);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vh;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-left: 0.5vh solid rgb(0, 0, 0);
+    border-top: 0.5vh solid rgb(0, 0, 0);
+}
+
+model-viewer {
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    left: 10vw;
+    bottom: 5vh;
+    background-image: linear-gradient(to right top, #81caf0, #77b9e2, #6ea9d4, #6699c6, #5e89b7);
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.76);
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+#exit {
+    position: fixed;
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+    left: 10vw;
+    top: 10vh;
+    background-color: brown;
+    width: fit-content;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    z-index: 10000;
+}
+
+#exit:hover {
+    cursor: pointer;
+    background-color: rgb(148, 55, 21);
+}
