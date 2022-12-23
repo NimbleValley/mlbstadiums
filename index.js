@@ -73,7 +73,7 @@ var teamAbb = abb.split("\n");
 addTiles();
 
 function addTiles() {
-    for(var i = 0; i < 30; i ++) {
+    for (var i = 0; i < 30; i++) {
         var temp = document.createElement("div");
         temp.className = "stadium-tile";
         var description = document.createElement("div");
@@ -81,7 +81,7 @@ function addTiles() {
         description.className = "stadium-label";
         temp.appendChild(description);
         temp.id = i;
-        temp.onclick = function() {show(this.id)}
+        temp.onclick = function () { show(this.id) }
         stadiumContainer.appendChild(temp);
     }
 }
