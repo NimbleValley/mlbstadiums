@@ -88,7 +88,7 @@ function addTiles() {
 
 function show(i) {
     console.log(i)
-    viewer.src = `https://www.mediafire.com/file/u7idps0rocv66hs/Stadium_ARI.glb`
+    viewer.src = `models/Stadium_${teamAbb[i]}.glb`
     overlay.style.display = "block";
 }
 
